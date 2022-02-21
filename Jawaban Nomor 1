@@ -1,0 +1,16 @@
+class Memory{  
+void a(){System.out.println("frequency, memorySize, supportsCuda");}  
+}  
+class Product extends Memory{  
+void b(){System.out.println("price, idProduct");}  
+}  
+class Hardware extends Product{  
+void c(){System.out.println("brand, model");}  
+}  
+class TestInheritance2{  
+public static void main(String args[]){  
+Hardware d=new Hardware();  
+d.a();
+d.b();
+d.c();  
+}}  
