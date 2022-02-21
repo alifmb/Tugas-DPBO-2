@@ -1,0 +1,28 @@
+<?php
+  
+class Memory {
+   public function insideA() {
+    echo "frequency, memorySize, supportsCuda";
+     }
+}
+  
+class Product {
+   public function insideB();
+}
+  
+class Hardware extends Memory implements Product {
+  
+    function insideB() {
+        echo "\nprice, idProduct";
+    }
+  
+    public function insidemultiple() {
+    echo "\nbrand, model";
+    }
+}
+  
+$geeks = new Hardware();
+$geeks->insideA();
+$geeks->insideB();
+$geeks->insidemultiple();
+?>
